@@ -3,7 +3,7 @@ import generated.calculadora_pb2 as pb2
 import generated.calculadora_pb2_grpc as pb2_grpc
 
 def main():
-    channel = grpc.insecure_channel('localhost:50051')
+    channel = grpc.insecure_channel('192.168.33.10:50051')
     stub = pb2_grpc.CalculadoraServiceStub(channel)
 
     n1 = 10
